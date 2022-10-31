@@ -30,4 +30,38 @@
         return calculo=a+b;
     }
     console.log(calcular(2,3))
+    //igualdad
+    console.log(9 == 9);
+    console.log(9 === "9");
+    //objeto
+    var miPerro = {
+        "nombre": "Gino",
+        "edad": 5,
+        "peso": 6,
+        "raza": "Beagle"
+    };
+    miPerro.edad=12;
+    x=1;
+    y=2;
+    console.log( x<y ? x : y);
+    //funciones flecha
+    const fecha = function(){
+        return new Date();
+    }
+
+    const fecha2 = () => new Date();
+
+    //operador rest
+    function miFuncion(...args){
+        console.log(args);
+    }
+
+    miFuncion(1,2);
+
+    //operador stread
+    const numeros = [1,2,3];
+    function sumar2(f,g,h){
+        return f+g+h;
+    }
+    sumar2(...numeros);
 </script>
