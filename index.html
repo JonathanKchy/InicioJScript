@@ -1,67 +1,61 @@
-<script>
-    //es un comentario
-    var miVariable = "freeCodeCamp";
-    console.log(miVariable);
-    miVariable = 10;
-    console.log(miVariable);
-    miVariable = false;
-    console.log(miVariable);
-    var miNombre = "Andres";
-    console.log(miNombre);
-    //Operador de asiganción
-    var a;
-    var b = 2;
-    console.log(a);
-    console.log(b);
-    a = 10+b;
-    console.log(a);
-    //inicializar variables
-    var x = 9;
-    var miIdioma = "Español";
-    //operaciones aritmeticas
-    var suma = 7 % 12;
-    //modificar variables
-    var librosComprados = 105;
-    librosComprados++;
-    librosComprados += 5;
-    console.log(librosComprados);
-    // funciones
-    function calcular(a,b){
-        return calculo=a+b;
-    }
-    console.log(calcular(2,3))
-    //igualdad
-    console.log(9 == 9);
-    console.log(9 === "9");
-    //objeto
-    var miPerro = {
-        "nombre": "Gino",
-        "edad": 5,
-        "peso": 6,
-        "raza": "Beagle"
-    };
-    miPerro.edad=12;
-    x=1;
-    y=2;
-    console.log( x<y ? x : y);
-    //funciones flecha
-    const fecha = function(){
-        return new Date();
-    }
+<!DOCTYPE html>
+<html lang="es">
+    <!--It is where you insert links to others files-->
+    <head>
+        <title>App de Gatos</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+        <link href="./CSS/estilo.css" rel="stylesheet">
+    </head>
+    
+    <body>
+      
+      <a href="#docum-1">ir a documentación</a>
+      <h1 id="titulo-principal">Prueba de Paymentez</h1>
+      <main>
+        <p>Este es un programa para acceder a paymentez el <a href="https://developers.paymentez.com/docs/payments/" target="_blank" rel="noopener noreferrer">link es</a></p>
+        <h3 id="docum-1">documentación</h3>
+        <div class="prueba-div">
+          <a href="https://developers.paymentez.com/docs/payments/" target="_black" rel="noopener noreferrer">
+            <img src="./imagenes/qr.png" class="imagen-gato" alt="un QR azul">
+          </a>
+        </div>
+        <h3>Listas de gatos</h3>
+        <div>
+          <ul class="lista-de-gato">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+          <hr>
+          <h3>Lista ordenada de gatos</h3>
+          <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ol>
+        </div>
+        <!-- formulario
+        action= envia a algun lado cuando se aplasta en el boton -->
+        <form action="/enviar-respuesta">
+          <label class="lista-de-gato" for="interior">
+            <input id="interior" type="radio" name="interior-exterior" checked value="interior">Interior
+          </label>
+          <label for="exterior">
+            <input id="exterior" type="radio" name="interior-exterior" value="exterior">Exterior
+          </label>
+          <br>
+          <label for="cariño">
+            <input id="cariño" type="checkbox" value="cariño">cariñoso
+          </label>
 
-    const fecha2 = () => new Date();
-
-    //operador rest
-    function miFuncion(...args){
-        console.log(args);
-    }
-
-    miFuncion(1,2);
-
-    //operador stread
-    const numeros = [1,2,3];
-    function sumar2(f,g,h){
-        return f+g+h;
-    }
-    sumar2(...numeros);
-</script>
+          <input type="text" placeholder="cedula" required>
+          <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+      <p><small> derechos de autor</small></p>
+    </footer>
+    </body>
+</html>

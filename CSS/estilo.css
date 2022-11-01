@@ -1,0 +1,27 @@
+.lista-de-gato {
+  color: chocolate;
+  font-size: 30px;
+  font-family: 'Kolker Brush', cursive;
+}
+
+
+div {
+  background-color: aqua;
+}
+
+#titulo-principal{
+  color: slateblue;
+}
+
+.prueba-div{
+  background-color: red;
+}
+
+img{
+  margin: 15px;
+  padding: 15px;
+  background-color: yellow;
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+}
